@@ -1,0 +1,593 @@
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --blue: #2196F3;
+    --black: #212121;
+    --grey: #757575;
+    --white: #FFFFFF;
+    --button-grey: #F5F4FA;
+    --normal-font-size: 14px;
+    --middle-font-size: 16px;
+    --main-font: "Roboto" sans-serif;
+
+    
+}
+
+.container {
+
+    width: 1600px;
+    margin: 0 auto;
+
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    width:1600px;
+}
+/* Body global*/
+.entire-content {
+font-family: var(--main-font);
+color: var(--black);
+background-color: var(--white);
+
+}
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0; 
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+
+/* Header style*/
+.first-section {
+  display: flex; 
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: #ECECEC;
+  border-bottom-style: solid;
+  border-width: 1px;
+  width: 1600px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.web-studio {
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+    line-height: 1.2;
+    margin-left: 215px;
+
+  
+}
+.web-logo {
+    color: var(--blue);
+}
+/* Navigation list*/
+.navigation-list {
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    text-align: left;
+    line-height: 1.2;
+    margin-left: 93px;
+    
+}
+.list-element
+{
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.list-element:hover::after {
+    content:'';
+    width:55px;
+    height: 3px;
+    background-color: #2196F3;
+    display: block;
+    
+
+}
+
+.header-links {
+    display: flex;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    line-height: 1.2;
+    margin-left: 330px;
+    margin-right: 225px;
+
+}
+
+.first-link {
+    margin-right: 40px;
+}
+
+.link:focus {
+    color: var(--blue);
+    stroke: var(--blue);
+    cursor: pointer;
+}
+
+.link:hover {
+    color: var(--blue);
+    stroke: var(--blue);
+    cursor: pointer;
+}
+
+.envelope,
+.smartphone {
+    margin-right: 10px;
+}
+
+
+/* Link style */
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+.link:hover {
+    color: var(--blue);
+}
+.link:focus {
+    color: var(--blue)
+}
+
+/*Title section*/
+.title-section { 
+    display: flex;
+   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-bg.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 50% 50%;
+   justify-content: center;
+   align-items: center;
+    text-align: center;
+    width: 1600px;
+   
+    
+}
+ 
+.main-title {
+    color: var(--white);
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+    padding-top: 200px;
+    padding-bottom: 30px;
+
+}
+
+.blue-button {
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    line-height: 1.88;
+    letter-spacing: 0.96px;
+    margin-bottom: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*Advantages & what we do section*/
+.benefits {
+    display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+}
+.benefits-list {
+ margin-right: 30px; 
+
+}
+.benefits-list:last-child {
+    margin-right: 0;
+}
+.antenna, .clock, .diagram, .astronaut {
+ width: 270px;
+height: 120px;
+top: 774px;
+left: 215px;
+gap: 0px;
+border-radius: 4px 0px 0px 0px;
+opacity: 0px;
+background-color: #F5F4FA;
+padding-top: 20px;
+padding-bottom: 20px
+
+}
+
+
+.advantage {
+    font-size: var(--normal-font-size);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.42px;
+    margin-bottom: 10px;
+}
+.advantage-description {
+color: var(--grey);
+text-align: left;
+line-height: 1.71;
+letter-spacing: 0.42px;
+}
+
+.list, .benefits {
+    list-style-type: none;
+}
+
+/* What we do*/
+.do-section {
+display: inline-block;
+  text-align: center;
+}
+.do-title .our-team-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+
+}
+
+.do-fields {
+    margin-top: 50px;
+}
+
+.do-fields > img { 
+    margin-right: 30px;
+}
+
+.do-fields > img:last-child {
+    margin-right: 0;
+}
+
+ /*Our team section*/
+ .our-team { 
+    display: inline;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  .our-team > .section {
+    background-color: var(--button-grey);
+  }
+
+.name {
+    font-size: var(--middle-font-size);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.48px;
+    margin-top: 30px;
+}
+.ocupation {
+    font-size: var(--middle-font-size);
+    color: var(--grey);
+    line-height: 1.2;
+    letter-spacing: 0.48px;
+}
+
+.employes {
+    display: inline-block;
+    margin-right: 30px;
+    border-radius: 4px;
+    background-color: var(--white);
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
+            0px 1px 1px rgba(0, 0, 0, 0.14);
+            height: 428px;
+            margin-top: 50px;
+
+
+}
+.employes:last-child {
+    margin-right: 0px;
+}
+
+.social-icons-employes {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.social-icons-employes .social-icons {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    fill:#afb1b8;
+}
+
+.social-icons-employes li:hover {
+    fill: var(--white);
+    background-color: var(--blue);
+    cursor: pointer;
+}
+.social-icons-employes li:focus {
+    fill: var(--white);
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+/*Regular customer section*/
+.customers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    width: 1200px;
+    margin-left: 200px;
+
+}
+.customer-title {
+    margin-bottom: 50px;
+}
+
+.customers-icons .icon-element {
+    width: 170px;
+    height: 92px;
+    border-style: solid;
+    border-color: #AFB1B8;
+    border-width: 1px;
+    border-radius: 4px;
+    justify-content: center;
+    padding: 16px 32px 16px 32px;
+    
+}
+
+.icon-element {
+    display: inline-block;
+    margin-right: 30px;
+    fill: #afb1b8;
+}
+.icon-element:hover {
+    fill: var(--blue);
+    border-color: var(--blue);
+    cursor: pointer;
+   
+   
+}
+
+.icon-element:focus {
+    fill: var(--blue);
+    border-color: var(--blue);
+    cursor: pointer;
+}
+.icon-element:last-child {
+    margin-right: 0px;
+}
+
+
+/*Footer*/
+.contacts {
+    background-color: #2F303A;
+    height: auto;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding-left: 215px; 
+    width: 1600px; 
+}
+
+.web-studio-light {
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+    text-align: left;
+    line-height: 1.2;
+    color: var(--white);
+}
+
+.web-logo-light {
+    color: var(--blue);
+}
+.contacts-detailes {
+font-style: normal;
+margin-top: 28px;
+}
+.park {
+    line-height: 1.2;
+    letter-spacing: 0.42px;
+    margin-bottom: 12px;
+}
+
+.info {
+    margin-bottom: 12px;
+}
+.info, .number {
+    color: #FFFFFF60;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+}
+.info:hover, .number:hover {
+    color: var(--blue);
+}
+.info:focus, .number:focus {
+color: var(--blue);
+}
+ 
+.bottom-section .footer-social-icons {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.footer-social-icons {
+    text-align: left;
+    white-space: nowrap;
+    margin-right: 878px;
+    margin-bottom: 96px;
+    margin-top: 75px;
+}
+.find-us-on {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: var(--normal-font-size);
+    margin-bottom: 20px;
+}
+
+.social li {
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.svg-image {
+    margin: auto;
+}
+.social li:hover {
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+.social li:focus {
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+/* Portofolio page*/
+
+.buttons-element {
+    font-size: var(--middle-font-size);
+    font-weight: 500;
+    background-color: var(--button-grey);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    line-height: 1.63;
+    letter-spacing: 0.48px;
+    text-align: center;
+    margin-right: 8px;
+    padding: 6px 22px 6px 22px;
+}
+.buttons-list:last-child {
+    margin-right: 0px;
+}
+
+
+.buttons-element:hover {
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+.buttons-element:focus {
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+.buttons-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
+
+.portofolio {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-left: 215px;}
+
+.portofolio-content {
+align-content: center;
+}
+.portofolio-content:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.portofolio-content:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.top-image {
+display: block;
+}
+.bottom-card {
+    margin-top: 0px;
+    border-color: #EEEEEE;
+    border-width: 0.5px;
+    border-style: solid;
+    border-top: none;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+          
+}
+
+
+
+.projects {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 1.08px;
+    text-align: left;
+}
+.projects-type {
+    color: var(--grey);
+    font-size: var(--middle-font-size);
+    line-height: 1.88;
+    letter-spacing: 0.48px;
+    text-align: left;
+}
+.projects, .projects-type {
+    text-align: left;
+    margin-bottom: 0px; 
+    margin-top: 0px;   
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
