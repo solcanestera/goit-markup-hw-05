@@ -262,6 +262,9 @@ display: inline-block;
 
 .do-fields {
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .do-fields > img { 
@@ -270,6 +273,30 @@ display: inline-block;
 
 .do-fields > img:last-child {
     margin-right: 0;
+}
+
+.thumb {
+    position: relative;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.thumb > .label {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    color: var(--white);
+    background-color: rgba(47, 48, 58, 0.8);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
  /*Our team section*/
