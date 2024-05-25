@@ -636,28 +636,43 @@ display: block;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.is-hidden [data-modal-content] {
-    transform: translate(-50%, -50%) scale(1);
-}
 
 [data-modal-content] {
     width: 528px;
     height: 581px;
+    border-radius: 4px 0px 0px 0px;
+    opacity: 1px;
     background-color: var(--white);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    transition-duration: 1s;
+    transition-property: transform;
+    transition-duration: 2s;
     padding: 20px;
 
+}
+
+.is-hidden [data-modal-content] {
+    transform: translate(-50%, -50%) scale(0.8);
 }
 
 
 
 [data-modal-close] {
     position: absolute;
-    top: 10px;
-    right: 10px;
-
+    top: 8px;
+    right: 8px;
+    background-color: var(--white);
+    width: 30px;
+    height: 30px;
+    border-width: 1px;
+    border-radius: 50%;
+    border-color: rgba(0, 0, 0, 0.1);
 }
+
+.buton-modal__X {
+    width: 11px;
+    height: 11px;
+}
+
