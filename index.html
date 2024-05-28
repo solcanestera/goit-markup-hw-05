@@ -381,14 +381,21 @@
         </footer>
      </div>
 
-     <div data modal class="is-hidden">
+    <!-- Marcaj MODAL cu backdrop, fereastra si buton inchidere -->
+    <div data-modal class="is-hidden">
         <div data-modal-content>
-            <h2>Fereastra modala</h2>
-            <button data-modal-close class="buton-modal__" type="button">X</button>
-
+          <h2>FEREASTRA MODALA</h2>
+          <button data-modal-close type="button">
+            <a href="">
+              <svg class="buton-modal__X">
+                <use href="./images/symbol-defs.svg#icon-Vector-1-1" />
+              </svg>
+            </a>
+          </button>
         </div>
-
-     </div>
-     <script src="./modal.js"></script>
+      </div>
+  
+      <script src="./modal.js"></script>
     </body>
-    </html>
+  </html>
+  

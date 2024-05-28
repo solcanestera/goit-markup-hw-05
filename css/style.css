@@ -619,7 +619,7 @@ display: block;
     height: 20px;
 }
 
-/*Style pentru modal*/
+/* Style pentru MODAL */
 .is-hidden {
     opacity: 0;
     visibility: hidden;
@@ -628,14 +628,14 @@ display: block;
 }
 
 [data-modal] {
-    height: 100%;
+    background-color: #00000033;
     width: 100%;
+    height: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-}
 
+}
 
 [data-modal-content] {
     width: 528px;
@@ -647,17 +647,15 @@ display: block;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
+    padding: 20px;
     transition-property: transform;
     transition-duration: 2s;
-    padding: 20px;
-
+    /* transition-timing-function: linear; */
 }
 
 .is-hidden [data-modal-content] {
     transform: translate(-50%, -50%) scale(0.8);
 }
-
-
 
 [data-modal-close] {
     position: absolute;
@@ -674,5 +672,7 @@ display: block;
 .buton-modal__X {
     width: 11px;
     height: 11px;
-}
 
+
+
+}
